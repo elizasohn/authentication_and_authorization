@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   before_action :user_admin, only: [:create, :edit, :update, :destroy]
+  before_action :authorize, only: [:create]
 
   def index
     @products = Product.all
