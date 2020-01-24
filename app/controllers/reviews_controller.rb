@@ -1,6 +1,6 @@
 class ReviewsController < ApplicationController
-  before_action :user_admin, only: [:create]
-  
+
+
   def new
     @product = Product.find(params[:product_id])
     @review = @product.reviews.new
@@ -43,6 +43,7 @@ class ReviewsController < ApplicationController
   def destroy
     @review = Review.find(params[:id])
     @review.destroy
+    flash[:alert] = "Review was deleted!"
     redirect_to product_path(@review.product)
   end
 
