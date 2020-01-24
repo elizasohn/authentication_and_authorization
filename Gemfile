@@ -46,7 +46,6 @@ group :development, :test do
   gem 'launchy'
   gem 'pry'
 end
-end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
