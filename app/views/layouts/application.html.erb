@@ -15,9 +15,10 @@
     <% else %>
       <%= link_to "Sign up", '/signup' %> | <%= link_to "Sign in", '/signin' %>
     <% end %>
-
-    <%= flash[:alert] %>
-    <%= flash[:notice] %>
+    <br>
+    <br>
+    <p class="flashes"><%= flash[:alert] %>
+    <%= flash[:notice] %><p class="flashes">
 
     <%= yield %>
   </body>
