@@ -5,6 +5,12 @@
 <div class="product_listing">
 <h1>Products</h1>
 <p><%= link_to "Create new product", new_product_path %></p>
+<form>
+  <label for="">Search by title</label>
+  <input type="text" name="search">
+  <button type="submit" name="button">go</button>
+</form>
+
 <% if @products.any? %>
   <ul>
     <% @products.each do |product| %>
