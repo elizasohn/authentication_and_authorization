@@ -1,0 +1,27 @@
+body {
+  background-image: url("Appliances-background.jpg");
+  font-style: helvetica;
+}
+.title {
+  font-size: 40px;
+  text-align: center;
+  margin: 10%;
+  border-radius: 25px;
+}
+h1 {
+  background: white;
+  border-radius: 25px;
+  padding: 5%;
+  font-size: 40px;
+  font-family: Helvetica
+}
+.product_listing {
+  background: white;
+  border-radius: 20px;
+  padding: 5%;
+}
+.form {
+  background: white;
+  border-radius: 20px;
+  padding: 5%;
+}
