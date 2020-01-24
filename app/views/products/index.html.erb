@@ -1,0 +1,17 @@
+<div class="title">
+  <h1>Mario's Specialty Appliances</h1>
+</div>
+
+<div class="product_listing">
+<h1>Products</h1>
+<p><%= link_to "Create new product", new_product_path %></p>
+<% if @products.any? %>
+  <ul>
+    <% @products.each do |product| %>
+      <li><%= link_to product.name, product_path(product) %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>There are no products yet.</p>
+<% end %>
+</div>
