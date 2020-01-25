@@ -1,6 +1,11 @@
 class ReviewsController < ApplicationController
 
 
+  def index
+    @products = Product.all
+    redirect_to '/'
+  end
+
   def new
     @product = Product.find(params[:product_id])
     @review = @product.reviews.new
